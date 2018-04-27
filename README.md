@@ -68,8 +68,7 @@ First, fork and clone the repository
 ```bash
 cd Trumbowyg # to go into the project's root directory
 npm install # to install development dependencies
-npm install -g bower gulp # to install bower and gulp command if you don't have them already
-bower install # to install Trumbowyg dependencies (ie: jQuery)
+npm install -g gulp # to install command if you don't have them already
 gulp build # to build the project
 ```
 
