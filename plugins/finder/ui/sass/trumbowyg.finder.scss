@@ -1,0 +1,40 @@
+
+
+$modal-submit-color: #2ecc71 !default;
+$image-size: 100px;
+
+.trumbowyg .trumbowyg-modal-box .finder-list {
+    max-height: 250px;
+    overflow: auto;
+    margin-bottom: 20px;
+
+    .finder-list-itm {
+        margin: 5px;
+        height: $image-size;
+        width: $image-size; 
+        display: inline-block;
+        background-position: center center;
+        background-size: cover;
+        margin: .125em .25em;
+        border-radius: .2em;
+        border: 2px solid transparent;
+
+        &:hover {
+            border-color: #69878f;
+        }
+        
+        &.active {
+            border-color: $modal-submit-color;
+
+            &::after {
+                color: $modal-submit-color;
+                content: '✔';
+                display: block;
+                position: absolute;
+                margin-left: $image-size / 2;
+                margin-top: $image-size / 3;
+                font-size: 4em;
+            }
+        }
+    }
+}
